@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/feed_bg"
+    android:orientation="horizontal"  >
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/feed_item_margin"
+        android:layout_marginRight="@dimen/feed_item_margin"
+        android:layout_marginTop="@dimen/feed_item_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_parent_rounded_corner"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:paddingRight="5dp">
+
+         <TextView
+            android:id="@+id/contactname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+             android:text="name"
+            />
+
+        <TextView
+            android:id="@+id/contactphonemuber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/number"
+
+
+            />
+    </LinearLayout>
+
+        <CheckBox
+            android:layout_margin="20dp"
+
+            android:layout_alignParentRight="true"
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+             />
+
+</RelativeLayout>
+
+</LinearLayout>
